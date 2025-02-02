@@ -1,4 +1,3 @@
-readme_content = """\
 # AI Shoppin Assistant
 
 ## Comparative Conceptual Map
