@@ -44,10 +44,11 @@ However, areas for improvement include response consistency and error handling f
 ## Installation
 ```bash
 # Clone the repository
-git clone https://github.com/your-repo/.git
+git clone https://github.com/yes-its-shivam/shoppin_assignment.git
 
 # Navigate to the project directory
-cd ai-shopping-assistant
+cd shoppin_assignment
 
 # Install dependencies
 pip install ollama
+python agent.py
