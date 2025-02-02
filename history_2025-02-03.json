@@ -1,0 +1,24 @@
+{
+    "5234d1b2-a110-49b2-a70f-4f6d55fb101f": {
+        "call_string": "Calling search_products with args: () and kwargs: {'name': 'floral skirt', 'price_range': 40, 'size': 'S'}",
+        "response_string": "search_products returned: [{'id': 1, 'name': 'floral skirt', 'color': 'Pink', 'price': 35, 'size': 'S', 'in_stock': True, 'site': 'SiteA'}]"
+    }
+}
+{
+    "0e156aeb-bc64-46df-af1a-5cb0ca980cfc": {
+        "call_string": "Calling estimate_shipping with args: () and kwargs: {'product_name': 'white sneakers', 'location': '<user_location>', 'delivery_date': '2025-02-10'}",
+        "response_string": "estimate_shipping returned: {'feasible': True, 'cost': 7.99, 'estimated_delivery': '2025-02-05'}"
+    }
+}
+{
+    "ba408c18-b717-4847-acbd-b09ed892806e": {
+        "call_string": "Calling compare_prices with args: () and kwargs: {'product_name': 'casual denim jacket'}",
+        "response_string": "compare_prices returned: {'SiteA': 80, 'SiteB': 75, 'SiteC': 85}"
+    }
+}
+{
+    "62c7f32a-4c84-4f65-a69f-dd50bddda44a": {
+        "call_string": "Calling check_return_policy with args: () and kwargs: {'site': 'SiteB'}",
+        "response_string": "check_return_policy returned: Hassle-free returns within 14 days"
+    }
+}
