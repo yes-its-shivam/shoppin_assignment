@@ -52,3 +52,35 @@ cd shoppin_assignment
 # Install dependencies
 pip install ollama
 python agent.py
+```
+
+## Result logs from terminal:
+```(base) PS C:\Users\shivam\Desktop\shoppin> python .\agent.py
+Shopping Assistant initialized successfully!
+user query:  Find a floral skirt under $40 in size S. Is it in stock, and can I apply a discount code ‘SAVE10’?
+Search_product 'floral skirt' results: [{'id': 1, 'name': 'floral skirt', 'color': 'Pink', 'price': 35, 'size': 'S', 'in_stock': True, 'site': 'SiteA'}] 11111
+Assistant: Found: floral skirt in Pink
+Price: $35.00
+Size: S
+Available: Yes
+Seller: SiteA
+Price after discount:
+Original price: $35.00
+Discounted price: $31.50
+Discount applied: 10.0%
+
+user query:  I need white sneakers (size 8) for under $70 that can arrive by Friday
+Assistant: No results found.
+
+user query:  I found a ‘casual denim jacket’ at $80 on SiteA. Any better deals?
+comapre prices output, {'SiteA': 80, 'SiteB': 75, 'SiteC': 85}
+Assistant: 🔎 Price Comparison:
+- SiteA: $80.00
+- SiteB: $75.00
+- SiteC: $85.00
+💰 Best deal: SiteB at **$75.00**!
+
+user query:  I want to buy a cocktail dress from SiteB, but only if returns are hassle-free. Do they accept returns?
+Assistant: Return Policy: Hassle-free returns within 14 days
+
+Goodbye!
