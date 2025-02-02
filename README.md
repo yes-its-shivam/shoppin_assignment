@@ -59,7 +59,7 @@ python agent.py
 Shopping Assistant initialized successfully!
 user query:  Find a floral skirt under $40 in size S. Is it in stock, and can I apply a discount code ‘SAVE10’?
 tool call: [('search_products', {'name': 'floral skirt', 'price_range': 30, 'size': 'S'}), ('check_availability', {'product_id': '<product_id>'}), ('apply_discount', {'base_price': 30, 'promo_code': 'SAVE10'})]
-Search_product 'floral skirt' results: [{'id': 1, 'name': 'floral skirt', 'color': 'Pink', 'price': 35, 'size': 'S', 'in_stock': True, 'site': 'SiteA'}] 11111
+Search_product 'floral skirt' results: [{'id': 1, 'name': 'floral skirt', 'color': 'Pink', 'price': 35, 'size': 'S', 'in_stock': True, 'site': 'SiteA'}] 
 Assistant: Found: floral skirt in Pink
 Price: $35.00
 Size: S
@@ -69,11 +69,11 @@ Price after discount:
 Original price: $35.00
 Discounted price: $31.50
 Discount applied: 10.0%
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 user query:  I need white sneakers (size 8) for under $70 that can arrive by Friday
 tool call: [] #clearly something went wrong, maybe need more Cot action here
 Assistant: No results found.
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 user query:  I found a ‘casual denim jacket’ at $80 on SiteA. Any better deals?
 tool call:  [('compare_prices', {'product_name': 'casual denim jacket'})]
 Assistant: 🔎 Price Comparison:
@@ -81,7 +81,7 @@ Assistant: 🔎 Price Comparison:
 - SiteB: $75.00
 - SiteC: $85.00
 💰 Best deal: SiteB at **$75.00**!
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 user query:  I want to buy a cocktail dress from SiteB, but only if returns are hassle-free. Do they accept returns?
 tool call:  [('check_return_policy', {'site': 'SiteB'})]
 Assistant: Return Policy: Hassle-free returns within 14 days
